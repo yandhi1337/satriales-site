@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доставка — Satriale's</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-enter">
+<header class="header" id="header">
+    <div class="container header__inner">
+        <a href="index.html" class="logo">
+            <span class="logo__name">Satriale's</span>
+            <span class="logo__sub">pork store · est. 1956</span>
+        </a>
+        <nav class="nav" id="nav">
+            <a href="index.html" class="nav__link">Главная</a>
+            <a href="about.html" class="nav__link">О нас</a>
+            <a href="menu.html" class="nav__link">Меню</a>
+            <a href="gallery.html" class="nav__link">Галерея</a>
+            <a href="delivery.html" class="nav__link active">Доставка</a>
+            <a href="booking.html" class="nav__link">Бронирование</a>
+        </nav>
+        <button class="burger" id="burger"><span></span><span></span><span></span></button>
+    </div>
+</header>
+<section class="section" style="padding-top:120px;">
+    <div class="container">
+        <div class="section__header reveal">
+            <span class="section__label">Доставка</span>
+            <h2 class="section__title">Привезём к вам</h2>
+            <p class="section__desc">Свежее мясо и готовые блюда с доставкой по Нью-Джерси.</p>
+        </div>
+        <div class="delivery__grid reveal-stagger">
+            <div class="delivery__card">
+                <h3>Зона доставки</h3>
+                <p>Доставляем по всему Нью-Джерси и близлежащим районам Нью-Йорка.</p>
+                <p>Радиус — до 30 км от лавки.</p>
+                <p>Стоимость доставки — от $5, при заказе от $50 — бесплатно.</p>
+            </div>
+            <div class="delivery__card">
+                <h3>Время доставки</h3>
+                <p>Стандартная доставка: 60–90 минут</p>
+                <p>Экспресс-доставка: 30–45 минут (+$8)</p>
+                <p>Предзаказ: можно выбрать удобное время</p>
+            </div>
+            <div class="delivery__card">
+                <h3>Способы оплаты</h3>
+                <p>Наличные курьеру</p>
+                <p>Карта Visa / Mastercard</p>
+                <p>Apple Pay / Google Pay</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section" style="background:var(--bg-light);">
+    <div class="container">
+        <div class="section__header reveal">
+            <span class="section__label">Как заказать</span>
+            <h2 class="section__title">Три простых шага</h2>
+        </div>
+        <div class="delivery__grid reveal-stagger">
+            <div class="delivery__card">
+                <h3>01. Выберите</h3>
+                <p>Зайдите в <a href="menu.html" style="color:var(--gold);">наше меню</a> и добавьте блюда в корзину.</p>
+            </div>
+            <div class="delivery__card">
+                <h3>02. Оформите</h3>
+                <p>Укажите адрес и контактные данные. Мы перезвоним для подтверждения.</p>
+            </div>
+            <div class="delivery__card">
+                <h3>03. Получите</h3>
+                <p>Курьер привезёт заказ в указанное время. Приятного аппетита!</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container" style="text-align:center;">
+        <div class="reveal">
+            <p style="color:var(--text-dim);margin-bottom:20px;">Готовы сделать заказ?</p>
+            <a href="menu.html" class="btn btn--primary">Перейти в меню</a>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__col">
+                <a href="index.html" class="logo" style="margin-bottom:12px;">
+                    <span class="logo__name">Satriale's</span>
+                </a>
+                <p style="font-size:13px;">Мясная лавка с 1956 года</p>
+            </div>
+            <div class="footer__col">
+                <h4>Навигация</h4>
+                <a href="about.html">О нас</a>
+                <a href="menu.html">Меню</a>
+                <a href="gallery.html">Галерея</a>
+                <a href="delivery.html">Доставка</a>
+                <a href="booking.html">Бронирование</a>
+            </div>
+            <div class="footer__col">
+                <h4>Контакты</h4>
+                <p>Ньюарк, Нью-Джерси</p>
+                <p>+1 (201) 555-0187</p>
+                <p>hello@satriales.com</p>
+            </div>
+            <div class="footer__col">
+                <h4>Время работы</h4>
+                <p>Пн–Сб: 10:00–22:00</p>
+                <p>Вс: 11:00–20:00</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>© 2026 Satriale's Pork Store. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+<div class="modal-overlay" id="modal">
+    <div class="modal">
+        <button class="modal__close" onclick="closeModal()">✕</button>
+        <div class="modal__body" id="modalBody"></div>
+    </div>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
